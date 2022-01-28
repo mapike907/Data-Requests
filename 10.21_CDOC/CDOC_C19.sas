@@ -1,17 +1,17 @@
-/* COVID-19 Among CDOC  *************  Written by M.Pike 8 OCT 2021																				*/
-/*																   																				*/
-/* Purpose: Find COVID-19 Case Data utilizing CDOC's CEDR ID LIST  																				*/
-/*			Find COVID-19 Cases among Vaccinated and UnVax Staff   																				*/
-/*																   																				*/
+/* COVID-19 Among CDOC  *************  Written by M.Pike 8 OCT 2021										*/
+/*																		*/
+/* Purpose: Find COVID-19 Case Data utilizing CDOC's CEDR ID LIST  										*/
+/*			Find COVID-19 Cases among Vaccinated and UnVax Staff   									*/
+/*																   		*/
 /* IN:	J:\Programs\Other Pathogens or Responses\2019-nCoV\Vaccine Breakthrough\04_Internal VB Data Requests\CDOC_5 OCT 2021\CDOC_ALL_8OCT21	*/
-/*																   																				*/
-/* Outfile: WORK.FILTER_FOR_CDOC_ALLCASES containing all VB Cases among staff, idp			   													*/
-/*																   																				*/
+/*																   		*/
+/* Outfile: WORK.FILTER_FOR_CDOC_ALLCASES containing all VB Cases among staff, idp			   					*/
+/*																   		*/
 /************************************************************************************************************************************************/;
 
-libname severdbo odbc dsn='COVID19' schema=cases READ_LOCK_TYPE=NOLOCK;;
-libname severson odbc dsn='COVID19' schema=dbo READ_LOCK_TYPE=NOLOCK;;
-libname newcedrs odbc dsn='CEDRS_3_READ' schema=CEDRS READ_LOCK_TYPE=NOLOCK;
+libname severdbo odbc dsn='COVID19' schema=cases 	READ_LOCK_TYPE=NOLOCK;;
+libname severson odbc dsn='COVID19' schema=dbo 		READ_LOCK_TYPE=NOLOCK;;
+libname newcedrs odbc dsn='CEDRS_3_READ' schema=CEDRS 	READ_LOCK_TYPE=NOLOCK;
 RUN;
 
 
@@ -143,7 +143,7 @@ DATA CDOC_ALLCASES;
 	SET work.Merge3; 
 
 	Testdt = input(earliest_collectiondate, yymmdd10.) ;  
-	pos_month = month(testdt);      					  /*Note if using the code after Nov 2021, you need to code for Month & Year as this data will have Dec 2020 (as month 12)*/
+	pos_month = month(testdt);      	/*Note if using the code after Nov 2021, you need to code for Month & Year as this data will have Dec 2020 (as month 12)*/
 
 RUN; 
 
