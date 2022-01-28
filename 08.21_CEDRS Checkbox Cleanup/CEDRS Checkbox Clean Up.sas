@@ -10,7 +10,7 @@ libname severson odbc dsn='COVID19' schema=cases;
 run;
 
 
-		/***VB Box checked in CEDRS***/
+/***VB Box checked in CEDRS***/
 proc sql;
 create table denominatorvbinCEDRS
 as select distinct  e.EventID, e.Disease, e.EventStatus, e.countyassigned, e.ReportedDate, e.Age, e.AgeType, e.Outcome, s.vaccinebreakthrough
@@ -92,4 +92,4 @@ DATA new_list;
 RUN; 
 
 
-
+/************* END OF CODE ************************/;
