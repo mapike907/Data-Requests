@@ -1,5 +1,6 @@
 # Data-Requests
 
-Data request from A. Cronquist from an inquiry by CDOC. 
+**TASK**: Assess for checked vaccine breakthrough boxes in CEDRS where Vaccine Breakthough case does not meet vaccine breakthrough case definition. 
 
-**TASK**: Evaluate the COVID-19 Among CDOC employees and for assessessment of booster recomendations. 
+**Additional information**: In CEDRS, a checkbox was added and those hand entering vaccination data can check the box for vaccine breakthrough. The system checks this box if the case meets vaccine breakthrough case definition; however, boxes remained checked within CEDRS if it is hand checked during data entry.  This code will evaluate those that do not meet vaccine breakthrough case definition and have vaccine breakthrough checkbox checked.
+
