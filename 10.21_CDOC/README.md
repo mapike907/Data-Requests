@@ -1,4 +1,5 @@
 # Data-Requests
 
-Data requests for vaccine breakthrough questions.
+Data request from A. Cronquist from CDOC. 
 
+**TASK**: Evaluate the COVID-19 Among CDOC employees and for assessessment of booster recomendations. 
