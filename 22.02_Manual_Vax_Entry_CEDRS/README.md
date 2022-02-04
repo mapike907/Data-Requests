@@ -8,7 +8,7 @@ Request by Alicia, Questions:
 
 Data tables used for this analysis: Ciis.case_iz, Cedrs.cedrs_view, cedrs.SurveillanceFormVax
 
-(1) Number of all COVID Cases? (denominator):  894,086
+(1 Answer:) Number of all COVID Cases? (denominator):  894,086
 
 How many cases have vaccination info coming in from CIIS? 441,256
 
@@ -30,7 +30,7 @@ What proportion are manual entry only? 0.00976 (0.976%)
 
 What proportion are from CIIS only? 0.4935 (49.4%)
 
-(2) Manual Entries appear to be very complete when entered.
+(2 Answer:) Manual Entries appear to be very complete when entered.
 
 Google Doc: https://docs.google.com/document/d/1zGmYjlBjjPe3Q0yn-LRy-FQAHjQVqCmZOYjmQUwMdKc/edit
 
