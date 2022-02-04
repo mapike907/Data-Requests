@@ -1,18 +1,18 @@
 
 /*****************************************************************************************************/
-/** 	Evaluation of hand-entered vaccination data vs CIIS imported data in CEDRS					**/
-/**															  				   						**/
-/**		Q: What proportions of cases since 01/01/21 do we have a CIIS match for vaccination?		**/
-/**		Data request from: Alicia Cronquist					  				   						**/
-/** 																								**/				
-/** 																								**/
-/**		Writted by: M. Pike, Feb 1, 2022															**/
-/** 	Updated by: M. Pike, Feb 4, 2022															**/	
+/** 	Evaluation of hand-entered vaccination data vs CIIS imported data in CEDRS		    **/
+/**												    **/
+/**	Q: What proportions of cases since 01/01/21 do we have a CIIS match for vaccination?	    **/
+/**	Data request from: Alicia Cronquist					  		    **/
+/** 											            **/				
+/** 												    **/
+/**	Writted by: M. Pike, Feb 1, 2022							    **/
+/** 	Updated by: M. Pike, Feb 4, 2022							    **/	
 /*****************************************************************************************************/
 
 libname newcedrs odbc dsn='CEDRS_3_READ' schema=CEDRS 	READ_LOCK_TYPE=NOLOCK; 
 libname ciis     odbc dsn='Tableau' 	 schema=ciis	READ_LOCK_TYPE=NOLOCK; 
-libname severson odbc dsn='Tableau' 	 schema=dbo		READ_LOCK_TYPE=NOLOCK; 
+libname severson odbc dsn='Tableau' 	 schema=dbo	READ_LOCK_TYPE=NOLOCK; 
 libname archive4 'J:\Programs\Other Pathogens or Responses\2019-nCoV\Vaccine Breakthrough\07_Data\archive4'; 
 
 /*Q1: Find the denominator: How many COVID-19 Cases?*/;
