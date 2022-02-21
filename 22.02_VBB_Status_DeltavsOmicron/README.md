@@ -18,9 +18,15 @@ The graph on the left is the COVID-19 Cases by Vaccination status from July 2021
 
 ![VBB_CO](https://github.com/mapike907/Images/blob/main/VBB_Cases_CO.PNG)
 
-We see an increase in cases for all vaccination statuses in mid-December, as Omicron becomes >50% of the weekly proportion of variants.  
+In Colorado, there is an increase in cases for all vaccination statuses in mid-December, as Omicron becomes >50% of the weekly proportion of variants.  
 
 (1a) What percentage were vaccinated, vaccinated with booster, or unvaccinated?
+
+Individuals were were unvaccinated made up a higher proporition of cases during both Delta and Omicron. 
+
+![VBB_CO2](https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_2.PNG)
+
+
 
 
 
