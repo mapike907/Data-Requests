@@ -19,7 +19,7 @@ The graph on the left is Colorado's COVID-19 cases by vaccination status from Ju
 
 <img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO.PNG" alt="VBB_CO" width="700"/>
 
-In Colorado, there is an increase in cases for all vaccination statuses in mid-December, as Omicron becomes >50% of the weekly proportion of variants.  
+In Colorado, there is an increase in cases for all vaccination statuses in mid-December, as Omicron becomes greater than 50% of the weekly proportion of variants.  
 
 ### _What percentage were vaccinated, vaccinated with booster, or unvaccinated?_
 
@@ -39,3 +39,5 @@ Among Colorado residents, unvaccinated persons had higher percentage of cases th
 ### _What population is most at risk for hospitalization?_
 
 Among Colorado residents, individuals over the age of 70 years old were more greatly impacted by both Delta and Omicron.  
+
+<img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_4.png" alt="VBB_CO4" width="500"/>
