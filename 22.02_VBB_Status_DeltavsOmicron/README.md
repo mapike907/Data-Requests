@@ -13,23 +13,29 @@ This data analysis was performed in February 2022.
 
 # Answers: 
 
-/** CASES **/
+### /** CASES **/
 
 The graph on the left is the COVID-19 cases by vaccination status from July 2021 to January 2022. The graph on the right is from CDPHE’s dashboard and shows variants of concern, with weekly proportions by specimen collection date. From July until mid-December, Delta variant (B.1.617.2) was in greatest proportion. Omicron (B.1.1.529) was detected in early December and by mid-December (week of 12/19) accounted for >50% of the weekly proportion of variants. 
 
-![VBB_CO](https://github.com/mapike907/Images/blob/main/VBB_Cases_CO.PNG)
+<img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO.PNG" alt="VBB_CO" width="700"/>
 
 In Colorado, there is an increase in cases for all vaccination statuses in mid-December, as Omicron becomes >50% of the weekly proportion of variants.  
 
-_What percentage were vaccinated, vaccinated with booster, or unvaccinated?_
+### _What percentage were vaccinated, vaccinated with booster, or unvaccinated?_
 
-During July to December 2021, unvaccinated people had a higher percentage of cases compared to those who are vaccinated or vaccinated with a booster dose. In response to the new Omicron variant, the CDC recommended additional booster doses to all adults 18 years old or older in late November. 
+During July to December 2021, unvaccinated persons had a higher percentage of cases compared to those who are vaccinated or vaccinated with a booster dose. In response to the new Omicron variant, the CDC recommended additional booster doses to all adults 18 years old or older in late November. 
 
-By January 2022, unvaccinated persons maintained a higher percentage of cases than among those vaccinated or vaccinated with a booster dose. As total cases increased with Omicron, vaccine breakthrough was more prevalant; however, data continues to show the vaccine is still effective in preventing severe illness, hospitalization and death. 
+By January 2022, unvaccinated persons maintained a higher percentage of cases than among those vaccinated or vaccinated with a booster dose. As total cases increased with Omicron, vaccine breakthrough was more prevalant; however, data continues to show the vaccine is still effective in preventing severe illness, hospitalization and death.
 
-![VBB_CO2](https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_2.PNG)
+<img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_2.PNG" alt="VBB_CO2" width="500"/>
 
 
+### /** HOSPITALIZATIONS **/
 
+Unvaccinated persons have a higher proportion of cases that require hospitalization compared to those vaccinated and vaccinated with booster. Vaccination shows protection against severe illness requiring hospitialization.
+
+<img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_3.PNG" alt="VBB_CO3" width="500"/>
+
+### _What population is most at risk for hospitalization?_
 
 
