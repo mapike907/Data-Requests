@@ -38,6 +38,6 @@ Among Colorado residents, unvaccinated persons had higher percentage of cases th
 
 ### _What population is most at risk for hospitalization?_
 
-Among Colorado residents, individuals over the age of 70 years old were more greatly impacted by both Delta and Omicron.  
+Among Colorado residents, individuals over the age of 70 years old were impacted more by both Delta and Omicron. Comparing Delta and Omicron time periods, individuals aged 70 and older had a higher percentage of hospitalizations during January (Omicron) than in November (Delta). 
 
 <img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_4.png" alt="VBB_CO4" width="500"/>
