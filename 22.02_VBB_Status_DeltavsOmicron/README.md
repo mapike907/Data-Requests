@@ -22,7 +22,7 @@ In Colorado, there is an increase in cases for all vaccination statuses in mid-D
 
 (1a) What percentage were vaccinated, vaccinated with booster, or unvaccinated?
 
-Individuals were were unvaccinated made up a higher proporition of cases during both Delta and Omicron. 
+Unvaccinated people have a higher proporition of cases. 
 
 ![VBB_CO2](https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_2.PNG)
 
