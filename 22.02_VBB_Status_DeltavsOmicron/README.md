@@ -15,7 +15,7 @@ This data analysis was performed in February 2022.
 
 ### /** CASES **/
 
-The graph on the left is the COVID-19 cases by vaccination status from July 2021 to January 2022. The graph on the right is from CDPHE’s dashboard and shows variants of concern, with weekly proportions by specimen collection date. From July until mid-December, Delta variant (B.1.617.2) was in greatest proportion. Omicron (B.1.1.529) was detected in early December and by mid-December (week of 12/19) accounted for >50% of the weekly proportion of variants. 
+The graph on the left is Colorado's COVID-19 cases by vaccination status from July 2021 to January 2022. The graph on the right is from CDPHE’s dashboard and shows variants of concern, with weekly proportions by specimen collection date. From July until mid-December, Delta variant (B.1.617.2) was in greatest proportion. Omicron (B.1.1.529) was detected in early December and by mid-December (week of 12/19) accounted for >50% of the weekly proportion of variants. 
 
 <img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO.PNG" alt="VBB_CO" width="700"/>
 
@@ -32,10 +32,10 @@ By January 2022, unvaccinated persons maintained a higher percentage of cases th
 
 ### /** HOSPITALIZATIONS **/
 
-Unvaccinated persons have a higher proportion of cases that require hospitalization compared to those vaccinated and vaccinated with booster. Vaccination shows protection against severe illness requiring hospitialization.
+Among Colorado residents, unvaccinated persons had higher percentage of cases that require hospitalization compared to those vaccinated and vaccinated with booster during this time period. Between July 2021 and January 2022, hospitalizations were highest in November (Delta variant) and in January (Omicron variant). Vaccination continues to show protection against severe illness requiring hospitialization.
 
-<img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_3.PNG" alt="VBB_CO3" width="500"/>
+<img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_3.png" alt="VBB_CO3" width="500"/>
 
 ### _What population is most at risk for hospitalization?_
 
-
+Among Colorado residents, individuals over the age of 70 years old were more greatly impacted by both Delta and Omicron.  
