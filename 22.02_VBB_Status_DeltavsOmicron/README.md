@@ -2,6 +2,15 @@
 
 This data analysis was performed in February 2022.
 
+# Definitions:
+
+**Vaccinated:** a fully vaccinated person had a SARS-CoV-2 RNA or antigen detected on a respiratory specimen collected >= 14 days after completing the primary series of an FDA-authorized or approved COVID-19 vaccine. 
+
+**Vaccinated + Booster:** a fully vaccinated person with one booster dose has received one additional dose of an FDA-authorized or approved COVID-19 vaccine on or after August 13, 2021, and had a SARS-CoV-2 RNA or antigen detected on a respiratory specimen >= 14 days after receiving an additional dose. Additional dose can be Pfizer, Moderna, or J&J. 
+
+**Unvaccinated:** persons with partial vaccination status, who received one FDA-authorized vaccine dose but did not complete a primary series >= 14 days before collection of a specimen where SARS-CoV-2 RNA or antigen was detected are considered unvaccinated. 
+
+
 # Questions: 
 
 (1) How have cases changed between vaccinated, vaccinated with booster, and unvaccinated between Delta (July 2021 to November 2021) and Omicron (December 2021 to January 2022)?
@@ -40,4 +49,12 @@ Among Colorado residents, unvaccinated persons had higher percentage of cases th
 
 Among Colorado residents, individuals over the age of 70 years old were impacted more by both Delta and Omicron. Comparing Delta and Omicron time periods, individuals aged 70 and older had a higher percentage of hospitalizations during January (Omicron) than in November (Delta). 
 
-<img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_4.png" alt="VBB_CO4" width="500"/>
+<img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_4.PNG" alt="VBB_CO4" width="700"/>
+
+November 2021 (Delta): Among those who are aged 70+ years, vaccinated people with a booster are 20.6 times less likely to become hospitalized than vaccinated people without a booster and 37.7 times less likely to be hospitalized compared to unvaccinated people.
+
+January 2022 (Omicron): Among those who are aged 70+ years, vaccinated people with a booster are 1.9 times less likely to become hospitalized than vaccinated people without a booster and 2.7 times less likely to be hospitalized compared to unvaccinated people.
+
+<img src="https://github.com/mapike907/Images/blob/main/VBB_Cases_CO_5.PNG" alt="VBB_CO3" width="500"/>
+
+
