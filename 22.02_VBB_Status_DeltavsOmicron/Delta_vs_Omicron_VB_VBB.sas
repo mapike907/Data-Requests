@@ -53,7 +53,7 @@ Data work.cedrs_view;
 	if age_at_reported >= 0 and age_at_reported  <= 4 then agegrp = '0-4';
 		else if age_at_reported >= 5 and age_at_reported  <= 11 then agegrp = '5-11';
 		else if age_at_reported >= 12 and age_at_reported  <= 15 then agegrp = '12-15';
-		else if age_at_reported >= 16 and age_at_reported  <= 19 then agegrp = '12-19';
+		else if age_at_reported >= 16 and age_at_reported  <= 19 then agegrp = '16-19';
 		else if age_at_reported  >= 20 and age_at_reported  <= 29 then agegrp = '20-29';
 		else if age_at_reported  >= 30 and age_at_reported  <= 39 then agegrp = '30-39';
 		else if age_at_reported  >= 40 and age_at_reported  <= 49 then agegrp = '40-49';
@@ -98,7 +98,7 @@ Data work.cedrs_view;
 	
 RUN; 
 
-Data archive2.DeltaOmicron_21522;
+Data archive2.DeltaOmicron_22222;
 	set work.cedrs_view; 
 
 	format status $8.;
