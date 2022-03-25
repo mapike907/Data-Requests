@@ -1,4 +1,4 @@
-# Data-Requests
+# Data-Requests, 14 day analysis
 Data Requests - Vaccine Breakthrough Analyses, 14-day analysis
 
 CDC asked us to look at our data for comparing a 14-day window for immunity buildup following immunization and prior to collection date. 
