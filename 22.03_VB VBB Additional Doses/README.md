@@ -1,5 +1,3 @@
-# Statewide VB Demographics
+# Vaccince Breakthrough (VB) and Vaccine Breakthrough Booster (VBB) 
 
-Requested by LPHA, El Paso County, October 2021
-
-SAS Code provides VB case numbers for El Paso County, Colorado.
+Requested by CDPHE as a response to CDC call where juristictions were asking about 14-day lag.
