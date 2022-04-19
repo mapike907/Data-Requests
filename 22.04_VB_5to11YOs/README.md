@@ -17,7 +17,7 @@ Methods, Population:
 - Filtered by age groups: 5-11; 12+
 - Summation of the following: 
     sum(total_fully_vaccinated) as Sum_total_fully_vax, sum(total_not_fully_vaccinated) as Sum_total_unvaxed
-- Population data calculated in spreadsheet: https://docs.google.com/spreadsheets/d/1SnbOSvvJZXiA32r6ypEtUj2P7jYUy9wJxanLnlYQFiY/edit?usp=sharing
+- Population data calculated in spreadsheet within github folder.
 
 
 <img src="https://github.com/mapike907/Images/blob/main/COVID_511_Slide1.PNG" alt="VB_kids" width="700"/> 
