@@ -20,3 +20,5 @@ Methods, Population:
 - Population data calculated in spreadsheet: https://docs.google.com/spreadsheets/d/1SnbOSvvJZXiA32r6ypEtUj2P7jYUy9wJxanLnlYQFiY/edit?usp=sharing
 
 
+<img src="https://github.com/mapike907/Images/blob/main/COVID_511_Slide1.png" alt="Kids_CO" width="700"/>
+COVID_511_Slide1.PNG
