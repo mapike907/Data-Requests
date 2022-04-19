@@ -20,28 +20,34 @@ Methods, Population:
 - Population data calculated in spreadsheet: https://docs.google.com/spreadsheets/d/1SnbOSvvJZXiA32r6ypEtUj2P7jYUy9wJxanLnlYQFiY/edit?usp=sharing
 
 
-
 <img src="https://github.com/mapike907/Images/blob/main/COVID_511_Slide1.PNG" alt="VB_kids" width="700"/> 
 Figure above: Data obtained from cedrs_view on 4/18/22. Analysis was performed on 4/18/22. CDC approved use of Pfizer vaccination on 11/2/21. Earliest_collectiondate was 12/07/21. Age group 5-11 years old is currently ineligible for a booster dose. 
 
+/
+/
 
 <img src="https://github.com/mapike907/Images/blob/main/COVID_511_Slide2.PNG" alt="VB_kids2" width="700"/>
 
-
+/
+/
 
 <img src="https://github.com/mapike907/Images/blob/main/COVID_511_Slide3.PNG" alt="VB_kids3" width="700"/> 
 Figure above: Data obtained from cedrs.cedrs_view on 4/18/22. Analysis was performed on 4/18/22. CDC approved use of Pfizer vaccination on 11/2/21. Earliest_collectiondate was 12/07/21. Age group 5-11 years old is currently ineligible for a booster dose. Hospitalization data lags by two weeks.
 
-
+/
+/
 
 <img src="https://github.com/mapike907/Images/blob/main/COVID_511_Slide4.PNG" alt="VB_kids4" width="700"/> 
 Figure above: Data obtained from cedrs.cedrs_view on 4/18/22. Analysis was performed on 4/18/22. CDC approved use of Pfizer vaccination on 11/2/21. Earliest_collectiondate was 12/07/21. Age group 5-11 years old is currently ineligible for a booster dose. Hospitalizations lag by two weeks.
 
-
+/
+/
 
 <img src="https://github.com/mapike907/Images/blob/main/COVID_511_Slide5.PNG" alt="VB_kids5" width="700"/> 
 Figure above: Cases from 12/7/21 to 4/18/22. Analysis performed on 4/18/22.
 
+/
+/
 
 
 <img src="https://github.com/mapike907/Images/blob/main/COVID_511_Slide6.PNG" alt="VB_kids6" width="700"/> 
