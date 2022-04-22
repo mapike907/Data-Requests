@@ -2,7 +2,7 @@
 /***	Questions around differences in Vax data from line list vs aggregate			   	**/
 /**													**/
 /**													**/
-/**		Written by: M. Pike, April 22, 2022							**/
+/**	Written by: M. Pike, April 22, 2022								**/
 /**													**/
 /*********************************************************************************************************/
 
