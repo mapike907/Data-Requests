@@ -1,15 +1,15 @@
 
-/***	Questions around differences in Vax data from line list vs aggregate						**/
-/**															  				   						**/
-/**																									**/
-/**		Written by: M. Pike, April 22, 2022															**/
-/**																									**/
-/*****************************************************************************************************/
+/***	Questions around differences in Vax data from line list vs aggregate			   	**/
+/**													**/
+/**													**/
+/**		Written by: M. Pike, April 22, 2022							**/
+/**													**/
+/*********************************************************************************************************/
 
 libname newcedrs odbc dsn='CEDRS_3_read' 	schema=CEDRS 	READ_LOCK_TYPE=NOLOCK; /*66 - CEDRS */;
-libname covidvax odbc dsn='covid_vaccine' 	schema=tab 		READ_LOCK_TYPE=NOLOCK; /* 138 - CIIS */;
-libname covcase	 odbc dsn='COVID19' 	    schema=cases	READ_LOCK_TYPE=NOLOCK; /* 144 - DBO */;
-libname covid	 odbc dsn='COVID19' 	    schema=dbo		READ_LOCK_TYPE=NOLOCK; /* 144 - DBO */;
+libname covidvax odbc dsn='covid_vaccine' 	schema=tab 	READ_LOCK_TYPE=NOLOCK; /* 138 - CIIS */;
+libname covcase	 odbc dsn='COVID19' 	    	schema=cases	READ_LOCK_TYPE=NOLOCK; /* 144 - DBO */;
+libname covid	 odbc dsn='COVID19' 	    	schema=dbo	READ_LOCK_TYPE=NOLOCK; /* 144 - DBO */;
 libname covid19  odbc dsn='Tableau' 		schema=ciis 	READ_LOCK_TYPE=NOLOCK; /* 144 - CIIS */;
 
 
@@ -57,7 +57,7 @@ data ciis_vax_all;
 	drop _name_ _label_;
 run;
 
-/* Pull vaccines from CEDRS grid */
+/* Pull vaccines from CEDRS grid */;
 proc sql;
 create table vaccines_cedrs
 as select distinct v.EventID, v.VaccinationDate,
@@ -146,7 +146,7 @@ data combine_datapull_1;
 		else CIIS = "1";
 run;
 
-/***Identify duplicates and drop duplicates***/
+/***Identify duplicates and drop duplicates***/;
 proc sort data=combine_datapull_1;
 	by EventID CIIS;
 run;
@@ -190,10 +190,11 @@ PROC SQL;
 QUIT;
 
 /* create table cases from cases_cedrs3WH and left join birthday and ciis.all_case_iz*/;
+
 PROC SQL;
 	CREATE TABLE cases AS
 
-	SELECT DISTINCT e.*, s.*, z.* 	 /*selecting all variables from all tables*/
+	SELECT DISTINCT e.*, s.*, z.* 	 
 
 	FROM cases_Cedrs3WH e
 
