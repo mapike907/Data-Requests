@@ -230,6 +230,22 @@ RUN;
 	;
 QUIT; 
 
+Proc sort data=doses;
+	by patient_id;
+run;
+
+/* Create 2 files - 1 mRNA and 1 J&J */ 
+
+
+
+
+
+
+
+
+
+
+
 /*Grab manual entry & filter for COVID, from cedrs.SuveillanceFormVax and left join zDSI_Events*/; 
 
 PROC SQL;
