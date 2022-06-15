@@ -1,14 +1,12 @@
 
 
-/*****************************************************************************************************/
-/** 	COPHS Analysis for Tye																		**/
-/**															  				   						**/
-/** 	Comparing Cophs_tidy to Cophs_full to Raw													**/
-/**																									**/
-/**																									**/															   
-/** 																								**/
-/**		Written by: M. Pike, June 13, 2022															**/																	**/
-/*****************************************************************************************************/; 
+/********************************************************/
+/** 	COPHS Analysis for Tye						   **/
+/**													   **/
+/** 	Comparing Cophs_tidy to Cophs_full to Raw	   **/
+/**													   **/
+/**		Written by: M. Pike, June 13, 2022			   **/															
+/********************************************************/; 
 
 
 libname newcedrs 	odbc dsn='CEDRS_3_read' schema=CEDRS 	READ_LOCK_TYPE=NOLOCK; /*66 - CEDRS */;
@@ -298,163 +296,5 @@ DATA  match4 nomatch4 ;
 	else output nomatch4 ;
 RUN ;
 
-
-
-
 /*END OF CODE*/;
 
-
-
-
-
-
-
-
-
-
-
-/*older code below*/;
-
-
-
-/*rename variables to match cophs_tidy*/;
-
-DATA raw;
-	set work.expanded_format_covid_patient_da; 
-
-	format hospital_admission_date $18.;
-
-	rename 'MR Number'n = mr_number 'First Name'n = first_name 'Last Name'n = last_name 'Hospital Admission Date  (MM/DD/'n = hospital_admission_date; 
-RUN; 
-
-/*create local version of hospital.cophs_tidy*/;
-
-DATA cophs_tidy;
-	set hospital.cophs_tidy; 
-RUN; 
-
-
-/*older code below*/;
-
-/*Find those in raw that are not in cophs_tidy*/;
-
-proc sql;
-	create table raw_tidy as
-	select * 
-	from raw
-	where mr_number not in (select mr_number from cophs_tidy);
-quit;
-
-proc sql;
-select * from work.raw
-where mr_number not in (select mr_number from work.cophs_tidy);
-quit;
-
-/* Answer: there are 608 rows in raw that are not present in cophs_tidy, when looking at MR_number*/;
-
-
-
-
-/*Compare data by mr_number and admit date */;
-PROC SQL;
-   CREATE TABLE RAW_SHORT AS 
-   SELECT t1.mr_number, 
-          t1.last_name, 
-          t1.first_name, 
-          t1.hospital_admission_date, 
-          t1.'DOB (MM/DD/YYYY)'n
-      FROM WORK.RAW t1;
-QUIT;
-
-
-PROC SQL;
-   CREATE TABLE TIDY_SHORT AS 
-   SELECT t1.mr_number, 
-          t1.last_name, 
-          t1.first_name, 
-          t1.hospital_admission_date, 
-          t1.dob
-      FROM HOSPITAL.cophs_tidy t1;
-QUIT;
-
-/*format hosptial_admission_date in tidy_short*/;
-
-DATA tidy_out;
-	set tidy_short;
-
-	date = input(hospital_admission_date,yymmdd10.);
-	format date mmddyy10.;
-	drop hospital_admission_date; 
-	
-RUN;
-
-/*renaming date to hospital_admission_date*/;
-
-DATA tidy_short2;
-	set tidy_out (rename=(date=hospital_admission_date));
-RUN;
-
-/*subquery: use NOT IN operator, which tells system not to include records from dataset2 (tidy_short2)
-A PROC SQL subquery returns a single row and column. This method uses a subquery in its SELECT 
-clause to select ID from table two. The subquery is evaluated first, and then it returns the id from 
-table two to the outer query.*/;
-
-PROC SQL;
-	create table In_Raw_Not_Tidy as
-	select * from raw_short
-	where mr_number not in (select mr_number from tidy_short2);
-QUIT;
-
-/* N = 7082 observations, duplicate mr_numbers are in this output but hospital_admission_dates appear to be different */;
-
-
-
-DATA test;
-	set tidy_short2;
-
-	if mr_number = 018865-01 or mr_number = 1004286828 then output;
-RUN; 
-
-
-DATA test2;
-	set raw_short;
-
-	if mr_number = 018865-01 or mr_number = 1004286828 then output;
-RUN; 
-
-
-
-
-
-
-
-proc sql;
-create table raw_tidy_combo
-	as select v.*
-
-	from raw_short v
-	left join tidy_short2 e on v.mr_number ne e.mr_number
-
-;
-quit;
-
-
-proc sql;
-	create table raw_tidy_combo2 as
-	select * 
-	from raw_short
-	where mr_number not in (select mr_number from tidy_short2);
-quit;
-
-
-DATA check2;
-	set tidy_short2;
-
-	if mr_number = 10348 then output;
-RUN;
-
-DATA check3;
-	set raw_short;
-
-	if mr_number = 10348 then output;
-RUN;
